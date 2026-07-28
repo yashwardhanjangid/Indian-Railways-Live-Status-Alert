@@ -1,16 +1,14 @@
 import os
 import requests
 
-RAPIDAPI_KEY = os.getenv("RAPIDAPI_KEY")
+API_KEY = os.getenv("RAILRADAR_API_KEY")
 
-TRAIN_NUMBER = "12956"   # <-- Apni train number yahan likh
+TRAIN_NUMBER = "12956"
 
-url = f"https://irctc-api5.p.rapidapi.com/live-status/{TRAIN_NUMBER}"
+url = f"https://api.railradar.in/v1/trains/{TRAIN_NUMBER}/live"
 
 headers = {
-    "Content-Type": "application/json",
-    "x-rapidapi-key": RAPIDAPI_KEY,
-    "x-rapidapi-host": "irctc-api5.p.rapidapi.com"
+    "Authorization": f"Bearer {API_KEY}"
 }
 
 response = requests.get(url, headers=headers)
