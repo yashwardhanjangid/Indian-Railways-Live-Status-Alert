@@ -1,4 +1,5 @@
 import os
+import json
 import requests
 
 API_KEY = os.getenv("RAILRADAR_API_KEY")
@@ -14,6 +15,4 @@ headers = {
 response = requests.get(url, headers=headers)
 
 print("Status Code:", response.status_code)
-import json
-
 print(json.dumps(response.json(), indent=2))
