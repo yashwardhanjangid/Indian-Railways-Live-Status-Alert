@@ -15,4 +15,7 @@ headers = {
 response = requests.get(url, headers=headers)
 
 print("Status Code:", response.status_code)
-print(json.dumps(response.json(), indent=2))
+with open("response.json", "w") as f:
+    json.dump(response.json(), f, indent=2)
+
+print(open("response.json").read())
