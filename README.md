@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Indian Railways Live Status Alert Banner" width="100%">
+</p>
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=githubactions)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?logo=telegram)
+![RailRadar API](https://img.shields.io/badge/API-RailRadar-orange)
+
 # 🚆 Indian Railways Live Status Alert
 
 An automated train monitoring system built with **Python**, **GitHub Actions**, **RailRadar API**, and **Telegram Bot API** that continuously tracks live train status and sends notifications only when meaningful changes occur.
